@@ -5,7 +5,7 @@ import { AuthContext } from '../AuthorizationContext.jsx';
 import './LoginPage.css';
 
 function LoginPage() {
-    const { authenticated, login } = useContext(AuthContext);
+    const { login } = useContext(AuthContext);
     const [email, setEmail] = useState('');
     const [password, setpassword] = useState('');
     let triedLogin = false;
