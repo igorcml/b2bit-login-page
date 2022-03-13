@@ -6,7 +6,7 @@
 }
 
 form {
-    height: 680px;
+    height: 750px;
     min-width: 600px;
     width: 620px;
     background-color: rgba(255, 255, 255, 0.13);
@@ -63,11 +63,13 @@ button {
 }
 
 .fail-login {
+    visibility: hidden;
+    /* display: none; */
     height: 50px;
     width: 100%;
     padding: 10px 10px;
     background-color: #ff6161;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 p {
     text-align: center;

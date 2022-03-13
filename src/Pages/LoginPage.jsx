@@ -6,7 +6,6 @@ import './LoginPage.css';
 
 function LoginPage() {
     const { authenticated, login } = useContext(AuthContext);
-
     const [email, setEmail] = useState('');
     const [password, setpassword] = useState('');
     let triedLogin = false;
@@ -16,6 +15,10 @@ function LoginPage() {
 
         //integracao com contexto / api
         triedLogin = await login(email, password);
+
+        if (triedLogin) {
+            document.getElementById('fail').style.visibility = 'visible';
+        }
     };
 
     return (
@@ -29,12 +32,7 @@ function LoginPage() {
                     b2b
                     <span className="it">it</span>
                 </h3>
-                <div
-                    className="fail-login"
-                    style={{
-                        display:
-                            !authenticated && triedLogin ? 'block' : 'none',
-                    }}>
+                <div className="fail-login" id="fail">
                     <p>No active account found with the given credentials.</p>
                 </div>
                 <div className="field">

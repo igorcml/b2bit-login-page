@@ -9,7 +9,9 @@ export const createSession = async (email, password) => {
 
         return response;
     } catch (error) {
-        alert(`No active account found with the given credentials. ${error}`);
+        console.error(
+            `No active account found with the given credentials. ${error}`
+        );
         return error.message;
     }
 };

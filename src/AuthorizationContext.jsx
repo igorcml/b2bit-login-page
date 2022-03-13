@@ -39,7 +39,6 @@ export const AuthProvider = ({ children }) => {
 
         setUser(loggedUser);
         navigate('/');
-        return response;
     };
 
     const logout = () => {
