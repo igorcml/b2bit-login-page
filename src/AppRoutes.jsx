@@ -6,10 +6,10 @@ import {
     Navigate,
 } from 'react-router-dom';
 
-import LoginPage from './Pages/LoginPage.jsx';
-import HomePage from './Pages/HomePage.jsx';
+import LoginPage from './Pages/LoginPage/LoginPage.jsx';
+import HomePage from './Pages/HomePage/HomePage.jsx';
 
-import { AuthProvider, AuthContext } from './AuthorizationContext';
+import { AuthProvider, AuthContext } from './Contexts/AuthorizationContext.jsx';
 
 function AppRoutes() {
     const Private = ({ children }) => {

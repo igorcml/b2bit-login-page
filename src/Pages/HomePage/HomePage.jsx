@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import { AuthContext } from '../AuthorizationContext.jsx';
+import { AuthContext } from '../../Contexts/AuthorizationContext.jsx';
 
 import './HomePage.css';
 

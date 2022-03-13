@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 
-import { AuthContext } from '../AuthorizationContext.jsx';
+import { AuthContext } from '../../Contexts/AuthorizationContext.jsx';
 
 import './LoginPage.css';
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect, createContext } from 'react';
 
 import { useNavigate } from 'react-router-dom';
 
-import { createSession, validateSession } from './ApiFetch';
+import { createSession, validateSession } from '../Services/ApiFetch';
 
 export const AuthContext = createContext();
 
