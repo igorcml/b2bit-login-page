@@ -8,15 +8,14 @@ function LoginPage() {
     const { login } = useContext(AuthContext);
     const [email, setEmail] = useState('');
     const [password, setpassword] = useState('');
-    let triedLogin = false;
+    let isLogged = true;
 
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        //integracao com contexto / api
-        triedLogin = await login(email, password);
+        isLogged = await login(email, password);
 
-        if (triedLogin) {
+        if (!isLogged) {
             document.getElementById('fail').style.visibility = 'visible';
         }
     };

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const baseURL = 'https://frontendproject.b2bit.company/account';
+const baseURL = 'https://frontendproject.b2bit.company/account';
 
 export const createSession = async (email, password) => {
     const request = { email: email, password: password };
@@ -16,7 +16,7 @@ export const createSession = async (email, password) => {
     }
 };
 
-export const ValidateSession = async (token) => {
+export const validateSession = async (token) => {
     const headers = {
         Authorization: `Bearer ${token}`,
         'Content-Type': 'application/json',
